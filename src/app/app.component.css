@@ -1,0 +1,27 @@
+nav {
+    width:1500px;
+    height: 40px;
+    overflow: hidden;
+    background-color: #333;
+}
+button{
+    text-transform: capitalize;
+    height: 40px;
+    background-color: rgb(0, 132, 255);
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: left;   
+    font-weight:bold;
+}
+button:hover{
+    background-color:rgb(57, 155, 247);
+    color: black;
+    width: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.y{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(0, 132, 255);
+}

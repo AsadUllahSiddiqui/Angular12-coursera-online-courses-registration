@@ -1,0 +1,17 @@
+<div class="back">
+  
+<h2 class="y">Courses at Udemy</h2>
+
+<ul class="mycourses">
+   
+    <li class="lli" *ngFor="let course of mycourses">
+    <button  
+    [routerLink]="['/Sub-Courses',course.name]">Select</button>
+      <span class="text">{{course.id}} {{course.title}}</span>
+       <div><a class="labl2"> Rating:</a><a class="lang"> {{course.ranking}}</a></div>
+    </li> 
+</ul> 
+</div>
+<!-- class.selected]="course.name===selectedCourse" -->
+   <!-- (click)="onSelect(course.name)"
+    (click)="send()" -->

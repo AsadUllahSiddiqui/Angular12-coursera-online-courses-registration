@@ -1,0 +1,25 @@
+ <div class="back">
+<h2 class="y">Sub courses </h2>
+<div class="allcourses">
+    <div  *ngFor="let course of allcourses"
+    (click)="onSelect(course.detailId)"
+    (click)="send()"
+    >
+    
+        <ng-template class="courseName" [ngIf]="courseName===course.name">
+            <div class="lli">
+            <button   
+            [routerLink]="['/Details',course.detailId,course.title,course.ranking,course.price]">Details</button>
+            <span class="text" >{{course.id}} {{course.title}} </span>  
+                <div>  <a class="labl2"> Language:</a><a class="lang"> {{course.language}}</a>  </div>
+                    <div>  <a class="labl2"> Level:</a><a class="lang"> {{course.level}}</a> </div>
+                        <div>   <a class="labl2"> Rating:</a><a class="lang"> {{course.ranking}}</a> </div>
+                    </div>
+                    </ng-template>
+    </div>
+</div>
+<!-- 
+(click)="onSelect(course.detailId)"
+(click)="send()" -->
+
+</div>

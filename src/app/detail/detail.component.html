@@ -1,0 +1,60 @@
+
+<div class="course">
+   
+   <div class="logoback"></div>
+   <div class="logoback2"></div>
+   <img class="cimg" src=" {{alldetails[detailID].img}}">
+   <h1 class="name">{{alldetails[detailID].name|uppercase}}</h1>
+   <p class="ex1">{{alldetails[detailID].intro}}</p>
+   <div class="btn1"><button>Buy</button></div>
+   <div class="btn2"><button>interested</button></div>
+   <div class="price">Price :{{price}}$</div>
+   <div class="discount">Discount :{{alldetails[detailID].discount}}</div>
+   <div class="student-reg">Students Enrolled :{{alldetails[detailID].studentsEnrolled}}</div>
+   <div class="starting-date">Starting Date :{{alldetails[detailID].DateAdded}}</div>
+</div>
+<!-- ---------teacher----------- -->
+<div class="teacherback">
+   <img class="timg" src="{{allteachers[detailID].img}}">
+   <div class="tname">{{allteachers[detailID].name}}</div>
+   <p class="educationDetail">{{allteachers[detailID].educationDetail}}
+      {{allteachers[detailID].aboutTeacher}}
+   </p>
+</div>
+<div class="teacher">
+  
+   <div class="number_of_courses"> Courses :{{allteachers[detailID].numberOfCourses}}</div>
+   <div class="teacher_ranking"> Rating :{{allteachers[detailID].ranking}}</div>
+   <div class="teacher_students"> My Students :{{allteachers[detailID].myStudents}}</div>
+   <div class="mycourseslbl"> MY COURSES</div>
+   <div class="container">
+   <div class="teacher_courses">
+      <div class="mycourses" *ngFor="let t of teacher_courses">
+              <span>{{t}}</span>
+      </div>
+   </div>
+   </div>
+</div>
+
+<!-- ---------detail----------- -->
+<div class="detailback">
+   <div class="cname">{{alldetails[detailID].name}}</div>
+   <div class="ctitle">{{title}}</div>
+</div>
+<div class="detail">
+   <div class="cquiz">Total Quizzes:{{alldetails[detailID].totalQuizzes}}</div>
+   <div class="cassignment">Total Assignments:{{alldetails[detailID].totalAssignments}}</div>
+   <div class="cHours">Total Hours:{{alldetails[detailID].totalHours}}</div>
+   <div class="studentsEnrolled">Students Enrolled:{{alldetails[detailID].studentsEnrolled}}</div>
+   <div class="prerequisites">Prerequisites:{{alldetails[detailID].prerequisites}}</div>
+
+   <div class="topics">Topics</div>
+   <div class="ttopics">
+   <div class="alltopics">
+      <div *ngFor="let t of alltopics">
+              <span>{{t}}</span>
+      </div>
+</div>
+</div>
+   
+</div>
